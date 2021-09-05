@@ -39,3 +39,18 @@ let coordinatesMouse;
 
 coordinatesMouse = "Cursor (mouse) coordinates.";
 console.log(coordinatesMouse);
+let greetings;
+
+greetings = "Hello World!";
+console.log(greetings);
+
+
+
+
+const myBirthday = "17.07.1993";
+console.log(myBirthday);
+
+
+const amount = 11;
+const amountWithZeros = amount + ":24";
+console.log(amountWithZeros);
