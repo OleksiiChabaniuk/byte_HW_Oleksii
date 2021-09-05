@@ -1,11 +1,14 @@
-let years;
+let userAge;
 
-years = 28;
+userAge = "28";
+console.log(userAge);
 
-let user_name;
+let userName;
 
-user_name = Oleksii;
+userName = "Oleksii";
+console.log(userName);
 
-let user_surname;
+let userSurname;
 
-user_surname = Chabaniuk;
+userSurname = "Chabaniuk";
+console.log(userSurname);
