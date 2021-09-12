@@ -9,3 +9,26 @@ if (firstNumber === secondNumber) {
 } else {
    alert("Перше число більше за друге");
 };
+//
+let num1 = Number(prompt('перше число'));
+
+let num2 = Number(prompt('друге число'));
+
+
+let operator = prompt('оператор (/,+,*,-)');
+
+
+switch (operator) {
+   case '+':
+      alert(num1 + num2);
+      break;
+   case '-':
+      alert(num1 - num2);
+      break;
+   case '/':
+      alert(num1 / num2);
+      break;
+   case '*':
+      alert(num1 * num2);
+}
+12
