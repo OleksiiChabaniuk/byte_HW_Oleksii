@@ -10,23 +10,30 @@
 //   };
 //   foundDegree()
 
-function foundDegree2(numberUser, userDegree = 2) {
-   alert(Math.pow(numberUser, userDegree));
-   return (Math.pow(numberUser, userDegree));
+const numUser = Number(prompt("цифра"));
+console.log('цифра', numUser);
+
+const powUser = Number(prompt("степінь"));
+console.log('степінь', powUser);
+
+function foundDegree2(num, pow = 2) {
+   let powNum = num ** pow;
+   console.log('результат', powNum);
+   alert(powNum);
+   return powNum;
+}
+
+
+foundDegree2(numUser, powUser)
+
+function foundDegree3(numberUser, userDegree = 2) {
+   const result = Math.pow(numberUser, userDegree)
+   console.log('Результат', result)
+   alert(result);
+   return result;
 };
 
 
-foundDegree2(3, 5)
-
-
-const numUser = Number(prompt("цифра"));
-console.log('цифра', numUser)
-const powUser = Number(prompt("степінь"));
-console.log('степінь', powUser)
-
-function foundDegree3(num, pow = 2) {
-   let powNum = num ** pow;
-   console.log('number', powNum)
-}
-
-foundDegree3(num, pow = 2)
+foundDegree3(3)
+const returnResult = foundDegree3();
+console.log('Результат', returnResult)
