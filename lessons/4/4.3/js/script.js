@@ -1,25 +1,32 @@
-/*function userData() {
-   const nameUser = prompt("Як до Вас звернутися?");
-   console.log('Користувача звати:', nameUser);
-   const userOld = Number(prompt("Який Ваш вік?"));
-   console.log('Вік користувача:', userOld);
+//function foundDegree() {
+//const numberUser = Number(prompt("Число"));
+//console.log('Число:', numberUser);
+//   const userDegree = Number(prompt("Ступінь"));
+//   console.log('Ступінь:', userDegree);
 
-   alert("Раді Вас бачити " + nameUser);
+//const z = numberUser ** userDegree;
+//   console.log('Відповідь:', z);
+//   alert("Відповідь: " + z);
+//   };
+//   foundDegree()
+
+function foundDegree2(numberUser, userDegree = 2) {
+   alert(Math.pow(numberUser, userDegree));
+   return (Math.pow(numberUser, userDegree));
+};
+
+
+foundDegree2(3, 5)
+
+
+const numUser = Number(prompt("цифра"));
+console.log('цифра', numUser)
+const powUser = Number(prompt("степінь"));
+console.log('степінь', powUser)
+
+function foundDegree3(num, pow = 2) {
+   let powNum = num ** pow;
+   console.log('number', powNum)
 }
 
-userData()
-
-function userGreeting() {
-   const nameUser = prompt("Як до Вас звернутися?");
-   console.log('Користувача звати:', nameUser);
-   const userOld = Number(prompt("Який Ваш вік?"));
-   console.log('Вік користувача:', userOld);
-   if (userOld >= 30) {
-      alert("Вітаю " + nameUser);
-   } else {
-      alert("Привіт " + nameUser);
-   }
-}
-
-userGreeting()
-*/
+foundDegree3(num, pow = 2)
