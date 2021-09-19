@@ -27,13 +27,11 @@ function foundDegree2(num, pow = 2) {
 foundDegree2(numUser, powUser)
 
 function foundDegree3(numberUser, userDegree = 2) {
-   const result = Math.pow(numberUser, userDegree)
-   console.log('Результат', result)
+   const result = Math.pow(numberUser, userDegree);
    alert(result);
    return result;
 };
 
 
-foundDegree3(3)
-const returnResult = foundDegree3();
-console.log('Результат', returnResult)
+const returnResult = foundDegree3(3, 5);
+console.log('Результат', returnResult);
