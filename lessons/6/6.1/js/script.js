@@ -5,14 +5,14 @@ let userPassword;
 
 
 function registrationuser() {
-   userName = prompt('Введіть І\'мя:');
+   userName = prompt('Введіть Ім\`я:');
    console.log(`userName ${userName}`);
-
-
    if (!userName) {
       alert('No date')
       return;
    }
+
+
 
 
 
