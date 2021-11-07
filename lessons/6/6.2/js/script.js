@@ -1,9 +1,7 @@
 let min = Number(prompt('Мінімальне:'));
-console.log("Min",
-   min);
+console.log(`Min ${min}`);
 let max = Number(prompt('Максимальне:'));
-console.log("Max",
-   max);
+console.log(`Max ${max}`);
 
 
 
@@ -12,4 +10,5 @@ var randomNumber = function (min, max) {
 };
 
 var rand = randomNumber(min, max);
-console.log("Random", rand);
+console.log(`Random ${rand}`);
+let numeric = alert(`Рандомне число ${rand}`);
