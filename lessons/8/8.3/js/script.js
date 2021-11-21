@@ -1,28 +1,26 @@
-function countTrue(arr) {
+function findExcess(integers) {
+   let evenArr = [];
+   let oddArr = [];
 
-   var clone = arr.slice(0),
-      test = [],
-      cur,
-      count = 0;
-
-   while (clone.length) {
-
-      cur = clone.shift();
-
-      if (test.indexOf(cur) === -1) {
-
-         test.push(cur);
-
-         if (clone.indexOf(cur) >= 0) {
-            count++;
-         }
+   for (let i = 0; i < integers.length; i++) {
+      if (integers[i] % 2 === 0) {
+         evenArr.push(integers[i]);
+      } else {
+         oddArr.push(integers[i]);
       }
    }
-   return document.writeln(count + '<br>');
+if (evenArr.length > oddArr.length) {
+   return oddArr[0];
+} else {
+   return evenArr[0];
+   }
 }
 
-countTrue([true, false, false, true, false]); // -> 2
 
-countTrue([false, false, false, false]); // -> 0
 
-countTrue([]); // -> 0
+
+findExcess([0, 1, 2]); // -> 1
+findExcess([1, 2, 3]); // -> 2
+findExcess([2, 6, 8, 10, 3]); // -> 3
+findExcess([0, 0, 3, 0, 0]); // -> 3
+findExcess([1, 1, 0, 1, 1]); // -> 0

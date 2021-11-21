@@ -17,4 +17,13 @@ const getOccurrencesCount = (arr) => {
    };
 
 
-getOccurrencesCount(arr);
+getOccurrencesCount([
+   "apples",
+   "oranges",
+   "pears",
+   "pears",
+   "apples",
+   "oranges",
+   "oranges",
+   "pears",
+]);
