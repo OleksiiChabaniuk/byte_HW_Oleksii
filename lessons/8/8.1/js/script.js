@@ -1,24 +1,13 @@
-function countTrue(arr) {
+let countTrue = (arr) => {
 
-   var clone = arr.slice(0),
-      test = [],
-      cur,
-      count = 0;
-
-   while (clone.length) {
-
-      cur = clone.shift();
-
-      if (test.indexOf(cur) === -1) {
-
-         test.push(cur);
-
-         if (clone.indexOf(cur) >= 0) {
-            count++;
-         }
+   let counter = 0;
+   for (let i = 0; i < arr.length; i++) {
+      if (arr[i]) {
+         counter++;
       }
    }
-   return document.writeln(count + '<br>');
+   console.log(`countTrue ${counter}`);
+   return counter;
 }
 
 countTrue([true, false, false, true, false]); // -> 2
