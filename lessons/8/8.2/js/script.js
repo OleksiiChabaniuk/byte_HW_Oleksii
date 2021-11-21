@@ -1,28 +1,20 @@
-function countTrue(arr) {
+const arr = (["a", "v", "a", "b", "b"]);
 
-   var clone = arr.slice(0),
-      test = [],
-      cur,
-      count = 0;
+const getOccurrencesCount = (arr) => {
+      const res = {};
 
-   while (clone.length) {
-
-      cur = clone.shift();
-
-      if (test.indexOf(cur) === -1) {
-
-         test.push(cur);
-
-         if (clone.indexOf(cur) >= 0) {
-            count++;
-         }
+   for (let item of arr) {
+      if (!res[item]) {
+         res[item] = 1;
+      }
+      else {
+         res[item] += 1;
       }
    }
-   return document.writeln(count + '<br>');
-}
+   //console.log(`${res}`);
+   return res;
 
-countTrue([true, false, false, true, false]); // -> 2
+   };
 
-countTrue([false, false, false, false]); // -> 0
 
-countTrue([]); // -> 0
+getOccurrencesCount(arr);
