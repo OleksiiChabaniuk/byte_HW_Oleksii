@@ -1,0 +1,31 @@
+button {
+
+   margin-top: 100px;
+   margin-left: 100px;
+   background-color: blue;
+   color: chocolate;
+}
+
+
+
+.tooltip {
+   position: absolute;
+   color: aqua;
+   background-color: black;
+   padding: 4px 8px;
+}
+
+
+
+.tooltip::after {
+   content: "";
+   position: absolute;
+   bottom: -7px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 0;
+   height: 0;
+   border-left: 7px solid transparent;
+   border-right: 7px solid transparent;
+   border-top: 7px solid #000;
+}
